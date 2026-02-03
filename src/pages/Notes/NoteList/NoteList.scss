@@ -1,0 +1,113 @@
+.loading {
+
+    .loading-content {
+        overflow: hidden;
+
+        h4 {
+            margin-top: 0px;
+        }
+
+        .loading-spinner {
+        }
+    }
+}
+
+.notes-list {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+
+    .notes-list-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin: 0 auto;
+    
+        h3 {
+
+        }
+
+        .notes-list-search {
+            margin-bottom: 5px;
+
+            input {
+                width: 100%;
+                padding: 6px;
+            }
+        }
+
+        .notes-list-content {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 15px;
+
+                .note-card {
+                    background: #eee;
+                    width: 300px;
+                    padding: 10px;
+                    border: 1px dashed #333;
+
+                    .note-card-actions {
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        padding: 10px;
+                        text-align: left;
+
+                        label {
+                            color: brown;
+                            font-size: 15px;
+                        }
+
+                        p {
+                            margin-bottom: 10px;
+                            font-size: 14px;
+                        }
+
+                        .note-actions {
+                            display: flex;
+                            gap: 10px;
+                            margin-top: 10px;
+
+                            .btn-edit-note {
+                                background: burlywood;
+                                color: #333;
+                                text-align: right;
+                                padding: 6px 10px;
+                                border: 1px dashed #333;
+                                transition: .2s all;
+
+                                &:hover {
+                                    color: #fff;
+                                }   
+                            }
+
+                            .btn-delete-note {
+                                background: burlywood;
+                                color: #333;
+                                text-align: right;
+                                padding: 6px 10px;
+                                border: 1px dashed #333;
+                                transition: .2s all;
+
+                                &:hover {
+                                    color: #fff;
+                                }   
+                            }
+                        }
+                    }
+
+                    .note-footer {
+                        
+                        small {
+
+                        }
+                    }
+                }
+            }
+        }
+}

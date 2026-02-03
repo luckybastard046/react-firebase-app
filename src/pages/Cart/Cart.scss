@@ -1,0 +1,30 @@
+.cart {
+
+    .cart-items {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        list-style-type: none;
+        margin-bottom: 10px;
+    }
+
+    .btn-checkout {
+        background: #333;
+        color: #eee;
+        padding: 10px;
+        border: 1px solid #333;
+        border-radius: 5px;
+        margin-top: 15px;
+        text-transform: uppercase;
+
+        &:hover {
+            background: #eee;
+            color: #333;
+        }
+    }
+
+    .cart-total {
+        margin-top: 25px;
+    }
+}

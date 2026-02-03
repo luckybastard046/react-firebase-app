@@ -1,0 +1,30 @@
+.notes {
+    .btn-add-note {
+        background: burlywood;
+        color: #333;
+        text-align: center;
+        gap: 5px;
+        padding: 10px 15px;
+        border: 1px dashed #333;
+        transition: .2s all;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+
+    .notes-error {
+        margin-top: 10px;
+    }
+
+    .notes-modal {
+        display: block;
+        margin: 0 auto;
+        margin-top: 15px;
+    }
+
+    .note-list {
+
+    }
+    
+}

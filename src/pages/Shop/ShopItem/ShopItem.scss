@@ -1,0 +1,31 @@
+.shop-item {
+    background: transparent;
+    width: 170px;
+    list-style-type: none;
+    border: 1px dashed #333;
+
+    .shop-item-details {
+        padding: 5px;
+
+        h3 {
+
+        }
+
+        img {
+            width: 160px;
+            height: 140px;
+            border: 1px solid brown;
+        }
+
+        .description {
+            font-size: 14px;
+        }
+
+        .price {
+            color: brown;
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+    }
+}

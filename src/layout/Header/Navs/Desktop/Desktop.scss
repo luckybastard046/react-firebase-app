@@ -1,0 +1,124 @@
+.nav-desktop {
+    border-top: 1px dashed #121212;
+    border-bottom: 1px dashed #121212;
+    
+    .nav-desktop-content {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 50px;
+
+        .logo {
+            display: flex;
+            align-items: center;
+            
+            img {
+                height: 50%;
+            }  
+
+        }
+
+        .nav-list {
+            display: flex;
+            list-style-type: none;
+
+            .active-link {
+                background: transparent;
+                color: #333;
+                display: block;
+                padding: 20px;
+                border-left: 1px dashed #333;
+                border-top: 5px solid brown;
+                text-decoration: none;
+                transition: .4s all;
+
+                &:hover {
+                    background: transparent;
+                    color: #333;
+                    border-top: 5px solid brown;
+                }
+            }
+
+            .not-active-link {
+                background: transparent;
+                color: #333;
+                display: block;
+                padding: 20px;
+                border-left: 1px dashed #333;
+                border-top: 5px solid transparent;
+                text-decoration: none;
+                transition: .4s all;
+
+                &:hover {
+                    background: transparent;
+                    color: #333;
+                    border-top: 5px solid #333;
+                }
+            }   
+        }
+
+        .item-cart {
+            display: block;
+            margin-left: 40px;
+
+            .active-cart-link {
+                position: relative;
+                background: #333;
+                color: #eee;
+                display: block;
+                padding: 18px 16px 12px 16px;
+                border-left: 1px dashed #333;
+                text-decoration: none;
+
+                &:hover {
+                    background: #333;
+                    color: #eee;
+                }
+
+                i {
+                    position: relative;
+                }
+
+                .cart-count {
+                    position: absolute;
+                    bottom: 7px;
+                    right: 12px;
+                    background: brown;
+                    color: #eee;
+                    padding: 0px 5px;
+                    border-radius: 15px;            
+                }
+            }
+
+            .not-active-cart-link {
+                position: relative;
+                background: transparent;
+                color: brown;
+                display: block;
+                padding: 18px 16px 12px 16px;
+                border-left: 1px dashed #333;
+                text-decoration: none;
+
+                &:hover {
+                    background: brown;
+                    color: #eee;
+                }
+
+                .cart-count {
+                    position: absolute;
+                    bottom: 7px;
+                    right: 12px;
+                    background: #333;
+                    color: #eee;
+                    padding: 0px 5px;
+                    border-radius: 15px;            
+                }
+            }   
+        }
+
+        .item-account {
+            display: flex;
+        }
+    }
+}

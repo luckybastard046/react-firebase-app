@@ -1,0 +1,131 @@
+.add-todo {
+  padding: 20px;
+  position: relative;
+
+  .heading {
+    margin: 10px;
+  }
+
+  form {
+    padding: 10px;
+
+    .inputItem {
+      position: relative;
+      margin: 20px 0;
+
+      input {
+        padding: 12px 20px;
+        width: 420px;
+        outline: none;
+        font-size: 16px;
+
+        @media (max-width: 500px) {
+          width: 245px;
+        }
+
+        &:invalid {
+          border: 1px solid #fd4a2b60;
+        }
+      }
+
+      span {
+        position: absolute;
+        font-size: 14px;
+        left: 16px;
+        top: 12px;
+        transition: transform 0.6s;
+        pointer-events: none;
+      }
+
+      &.focussed {
+        input {
+          border: 1px solid #00800060;
+        }
+
+        span {
+          transform: translateY(-24px);
+          background: white;
+          padding: 4px;
+          color: green;
+        }
+      }
+    }
+
+    .input-time {
+      display: flex;
+      margin: 35px 0;
+
+      .inputItem {
+        margin: 0 15px;
+
+        @media (max-width: 500px) {
+          margin: 0 9px;
+        }
+
+        &:first-child {
+          margin-left: 0;
+        }
+
+        input {
+          width: 120px;
+
+          @media (max-width: 500px) {
+            width: 70px;
+          }
+
+          &:invalid {
+            border: 1px solid #fd4a2b95;
+          }
+        }
+      }
+    }
+  }
+
+  .add-todo-loading {
+    background: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    width: 100%;
+    height: 90vh;
+    top: -40px;
+    left: 0;
+    display: none;
+    place-items: center;
+
+    .loader {
+      display: flex;
+      justify-content: space-between;
+      width: 35px;
+      span {
+        width: 7px;
+        height: 40px;
+        /*
+          Always remember whenever adding animation-deplay property it's
+          values should be less than the value of animation time
+          otherwise it wouldn't work :)
+        */
+        transition: background 0.2s;
+        animation: changeColor 0.4s;
+        animation-iteration-count: infinite;
+        background: rgb(248, 106, 50);
+
+        &:nth-child(1) {
+          animation-delay: 0.1s;
+        }
+
+        &:nth-child(2) {
+          animation-delay: 0.2s;
+        }
+
+        &:nth-child(3) {
+          animation-delay: 0.3s;
+        }
+      }
+    }
+
+    @keyframes changeColor {
+      100% {
+        background: rgba(0, 0, 0, 0.4);
+      }
+    }
+  }
+}

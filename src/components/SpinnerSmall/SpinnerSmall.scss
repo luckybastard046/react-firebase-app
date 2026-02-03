@@ -1,0 +1,22 @@
+.spinner-small {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+
+    .spinner-small-container {
+        background: transparent;
+        width: 60px;
+        height: 60px;
+        border: 6px solid #555;
+        border-top: 6px solid burlywood;
+        border-radius: 50%;
+        animation: infyways-loader-spin 1000ms linear infinite;
+    }
+
+    @keyframes infyways-loader-spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+}

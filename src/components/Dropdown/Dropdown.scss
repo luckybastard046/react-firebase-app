@@ -1,0 +1,147 @@
+.dropdown-content {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    background: #bbb;
+    z-index: 100;
+    transition: 0.2s ease-in-out;
+    border: 1px dashed #333;
+
+    .dropdown {
+        width: 280px;
+        padding: 10px;
+
+        .dropdown-header {
+            
+            h4 {
+
+            }
+
+            .dropdown-user {
+
+                .user {
+                    margin-top: 10px;
+
+                    .user-img {
+                        display: block;
+                        margin-bottom: 5px;
+
+                        p {
+                            font-size: 14px;
+                            font-weight: 500;
+                        }
+
+                        img {
+                            width: 50px;
+                            height: 50px;
+                            border: 1px dashed brown;
+                        }
+                    }
+
+                    .user-details {
+
+                        h4 {
+                            color: brown;
+                            margin-bottom: 5px;
+                        }
+
+                        .detail {
+                            display: flex;
+                            align-items: center;
+                            gap: 5px;
+
+                            h5 {
+                                font-size: 15px;
+                                font-weight: 500;
+                            }
+                           
+                            span {
+                                color: brown;
+                                font-size: 14px;
+                                margin-bottom: 2px;
+                            }
+
+                            .password-info {
+                                height: 100%;
+                                display: flex;
+                                align-items: center;
+                                gap: 5px;
+                            }
+                        }
+
+                        
+                    }
+
+                    .user-logout {
+                        margin-top: 15px;
+
+                        .btn-logout {
+                            background: #ff4155;
+                            color: #fff;
+                            text-transform: uppercase;
+                            font-weight: 500;
+                            font-size: 14px;
+                            padding: 10px 15px;
+                            border-radius: 0;
+                            border: 1px solid #333;
+
+                            &:hover {
+                                background: burlywood;
+                                color: #333;
+                            }
+                        }
+                    }
+
+                    img {
+                        height: 40px;
+                    }
+
+                    .user-navlinks {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        margin-top: 15px;
+
+                        .active-auth-link {
+                            background: #666;
+                            color: burlywood;
+                            padding: 9px 25px 9px 5px;
+                            border-top: 1px dashed burlywood;
+                            border-bottom: 1px dashed burlywood;
+                            text-decoration: none;
+                            transition: .3s all;
+
+                            &:hover {
+                                background: burlywood;
+                                color: #fff;
+                                border-top: 1px dashed #333;
+                                border-bottom: 1px dashed #333;
+                            }
+                        }
+
+                        .not-active-auth-link {                        
+                            background: none;
+                            color: #333;
+                            padding: 9px 25px 9px 5px;
+                            border-top: 1px dashed #333;
+                            border-bottom: 1px dashed #333;
+                            text-decoration: none;
+                            transition: .3s all;
+
+                            &:hover {
+                                background: burlywood;
+                                color: #333;
+                                
+                            }
+                        }
+                    }
+
+                    .user-logged {
+                        color: brown;
+                        margin-top: 15px;
+                    }
+                }
+            }
+        }
+    }
+}

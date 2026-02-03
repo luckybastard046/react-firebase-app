@@ -1,0 +1,120 @@
+.auth-form {
+    background: transparent;
+    width: 320px;
+    padding: 10px 0;
+    margin: 0 auto;
+    text-align: left;
+    border-top: 1px solid brown;
+    border-bottom: 1px solid brown;
+
+    .auth-group {
+        margin-top: 10px;
+
+        label {
+            color: #333;
+            font-size: 15px;
+            font-weight: 400;
+        }
+
+        div {
+
+            .group-items {
+                position: relative;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                margin-top: 5px;
+
+                .icon {
+                    background: #555;
+                    color: #e5e5e5;
+                    width: 50px;
+                    height: 40px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    border: 1px solid #666;
+                    border-right: none;
+                    font-weight: 900;
+                }
+
+                input {
+                    background: #ddd;
+                    color: #212121;
+                    width: 100%;
+                    height: 40px;
+                    font-size: 13px;
+                    padding: 8px;
+                    border: 1px solid #666;
+
+                    &:focus {
+                        background: #fff;
+                        outline: none;
+                        box-shadow: none;
+                    }
+                }   
+
+                i {
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+                    color: brown;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .submit-group {
+        color: #e5e5e5;
+        margin-top: 15px;
+        text-align: center;
+
+        .submit-buttons {
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            text-align: center;
+
+            .btn-submit {
+                width: 100%;
+                background: #ccc;
+                color: #333333;
+                text-transform: uppercase;
+                font-weight: 500;
+                border-radius: 0;
+                padding: 15px 25px;
+                border: 1px solid #666;
+
+                &:hover {
+                    background: #fff;
+                }
+            }
+        }
+
+        .submit-content {
+            margin-top: 20px;
+            margin-bottom: 20px;
+
+            p {
+                color: #212121;
+                font-size: 15px;
+                margin-bottom: 2px;
+            }
+
+            a {
+                color: #fff;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-size: 15px;  
+                padding: 5px;
+
+                &:hover {
+                    color: #212121;
+                }
+            }
+        }
+    }    
+}

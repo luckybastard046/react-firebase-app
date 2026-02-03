@@ -1,0 +1,106 @@
+.loading {
+    height: 200px;
+
+    .loading-content {
+        overflow: hidden;
+
+        h4 {
+        }
+
+        .loading-spinner {
+        }
+    }
+}
+
+.note-create {
+    margin: 0 auto;
+
+    .note-create-container {
+        h3 {
+
+        }
+
+        .create-form {
+
+            .create-content {
+
+                .create-group {
+                    display: block;
+                    text-align: left;
+
+                    label {
+                        display: block;
+                        padding: 6px 0 2px 0;
+                    }
+
+                    input {
+                        background: #ddd;
+                        color: #212121;
+                        width: 100%;
+                        font-size: 13px;
+                        padding: 10px;
+                        border: 1px solid #666;
+
+                        &:focus {
+                            background: #fff;
+                            outline: none;
+                            box-shadow: none;
+                        }
+                    }
+
+                    textarea {
+                        background: #ddd;
+                        color: #212121;
+                        width: 100%;
+                        font-family: "Red Hat Display", sans-serif;
+                        font-size: 13px;
+                        padding: 10px;
+                        border: 1px solid #666;
+
+                        &:focus {
+                            background: #fff;
+                            outline: none;
+                            box-shadow: none;
+                        }
+                    }
+                }
+            }
+
+            .create-actions {
+                display: flex;
+                gap: 5px;
+                margin-top: 10px;
+
+                .btn-create-cancel {
+                    background: burlywood;
+                    color: #333;
+                    text-align: right;
+                    padding: 10px 15px; 
+                    border: none;
+                    transition: .1s all;
+                    border: 1px dashed #333;
+
+                    &:hover {
+                        background: #333;
+                        color: #eee;
+                    }   
+                }
+
+                .btn-create-add {
+                    background: burlywood;
+                    color: #333;
+                    text-align: right;
+                    padding: 10px 15px; 
+                    border: none;
+                    transition: .1s all;
+                    border: 1px dashed #333;
+
+                    &:hover {
+                        background: #333;
+                        color: #eee;
+                    }   
+                }
+            }
+        }
+    }
+}

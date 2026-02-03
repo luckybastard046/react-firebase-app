@@ -1,0 +1,19 @@
+.o-auth {
+    background: #ccc;
+    width: 100%;
+    padding: 15px 20px;
+    border: 1px solid #666;
+
+    &:hover {
+        background: #fff;
+    }
+
+    span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3px;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+}
